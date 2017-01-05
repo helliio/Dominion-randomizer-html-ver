@@ -1,0 +1,11 @@
+html {
+	font-family: sans-serif;
+	font-size: 0.8em;
+}
+
+body > div {
+	border: 1px solid grey;
+	border-radius: .25em;
+	margin: 2em;
+	padding: 2em;
+}

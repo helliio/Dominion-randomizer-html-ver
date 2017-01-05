@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Dominion Randomizer</title>
+	<link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+	<div id="sel">
+		<div>
+			<input type="radio" name="expRadio" id="mExpNone" checked>
+			<label for="mExpNone">No main expantion selected</label>
+		</div>
+		<div>
+			<input type="radio" name="expRadio" id="mExpBase1">
+			<input type="checkbox" id="Base1" checked>
+			<label for="Base1">Base Set 1ed.</label>
+		</div>
+		<div>
+			<input type="radio" name="expRadio" id="mExpBase2">
+			<input type="checkbox" id="Base2">
+			<label for="Base2">Base Set 2ed.</label>
+		</div>
+		<div>
+			<input type="radio" name="expRadio" id="mExpIntrigue1">
+			<input type="checkbox" id="Intrigue1">
+			<label for="Intrigue1">Intrigue 1 ed.</label>
+		</div>
+		<div>
+			<input type="radio" name="expRadio" id="mExpIntrigue2">
+			<input type="checkbox" id="Intrigue2">
+			<label for="Intrigue2">Intrigue 2 ed.</label>
+		</div>
+		<div>
+			<input type="radio" name="expRadio" id="mExpAlchemy">
+			<input type="checkbox" id="Alchemy">
+			<label for="Alchemy">Alchemy</label>
+		</div>
+		<div>
+			<input type="radio" name="expRadio" id="mExpProsperity">
+			<input type="checkbox" id="Prosperity">
+			<label for="Prosperity">Prosperity</label>
+		</div>
+		<div>
+			<input type="radio" name="expRadio" id="mExpDarkAges">
+			<input type="checkbox" id="DarkAges">
+			<label for="DarkAges">Dark Ages</label>
+		</div>
+		<div>
+			<input type="radio" name="expRadio" id="mExpAdventures">
+			<input type="checkbox" id="Adventures">
+			<label for="Adventures">Adventures</label>
+		</div>
+		<div>
+			<input type="radio" name="expRadio" id="mExpEmpires">
+			<input type="checkbox" id="Empires">
+			<label for="Empires">Empires</label>
+		</div>
+	</div>
+	<div id="gen">
+		<div>
+			<input type="number" min="1" max="9" value="5" id="mExpNum">
+			<label for="mExpNum">Minimum main exp</label>
+		</div>
+		<div>
+			<input type="button" value="Veto" id="btnVeto">
+		</div>
+		<div>
+			<input type="button" value="Generate" id="btnGenerate">
+		</div>
+	</div>
+	<div id="box">
+		<select multiple id="listBox"></select>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="dominion-randomizer.js"></script>
+</body>
+
+</html>
